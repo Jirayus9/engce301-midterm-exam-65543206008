@@ -4,7 +4,7 @@
   "description": "Web application to showcase how to integrate React, Node.js and Express. Full explanation and guide available on Medium.",
   "main": "app.js",
   "scripts": {
-    "start": "node app",
+    "start": "HTTPS=true SSL_CRT_FILE=../server/server.crt SSL_KEY_FILE=./server/server.key react-scripts start",
     "server": "nodemon",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
